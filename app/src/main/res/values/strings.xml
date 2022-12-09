@@ -10,4 +10,9 @@
     <string name="valy">Cuenta</string>
     <string name="valmenufragment">Menú</string>
     <string name="valcuentafragment">Mi Cuenta</string>
+    <string name="Desayunos">btnDesayunos</string>
+    <string name="btnDesayunos">Desayunos</string>
+    <string name="btnBebidas">Bebidas</string>
+    <string name="btnPostres">Postres</string>
+    <string name="btnJugos">Jugos</string>
 </resources>
