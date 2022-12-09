@@ -3,25 +3,25 @@ package pe.edu.idat.amoreecaffe;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-public class Amore implements Parcelable {
+public class CategoriaEntity implements Parcelable {
 
     private int id;
     private int imagen;
 
-    protected Amore(Parcel in) {
+    protected CategoriaEntity(Parcel in) {
         id = in.readInt();
         imagen = in.readInt();
     }
 
-    public static final Creator<Amore> CREATOR = new Creator<Amore>() {
+    public static final Creator<CategoriaEntity> CREATOR = new Creator<CategoriaEntity>() {
         @Override
-        public Amore createFromParcel(Parcel in) {
-            return new Amore(in);
+        public CategoriaEntity createFromParcel(Parcel in) {
+            return new CategoriaEntity(in);
         }
 
         @Override
-        public Amore[] newArray(int size) {
-            return new Amore[size];
+        public CategoriaEntity[] newArray(int size) {
+            return new CategoriaEntity[size];
         }
     };
 
@@ -52,7 +52,7 @@ public class Amore implements Parcelable {
         parcel.writeInt(imagen);
     }
 
-    public Amore(int id, int imagen) {
+    public CategoriaEntity(int id, int imagen) {
         this.id = id;
         this.imagen = imagen;
     }

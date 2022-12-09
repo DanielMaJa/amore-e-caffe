@@ -13,27 +13,27 @@ import java.util.List;
 
 import pe.edu.idat.amoreecaffe.databinding.FragmentMenuLorenzoBinding;
 
-public class AmoreAdaptador extends RecyclerView.Adapter<AmoreAdaptador.ViewHolder> {
+public class CategoriaAdaptador extends RecyclerView.Adapter<CategoriaAdaptador.ViewHolder> {
 
-    private List<Amore> lista;
+    private List<CategoriaEntity> lista;
     private Context context;
 
-    public AmoreAdaptador(List<Amore> lista, Context context) {
+    public CategoriaAdaptador(List<CategoriaEntity> lista, Context context) {
         this.lista = lista;
         this.context = context;
     }
 
     @NonNull
     @Override
-    public AmoreAdaptador.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public CategoriaAdaptador.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         return new ViewHolder(FragmentMenuLorenzoBinding.inflate
                 (LayoutInflater.from(parent.getContext()),
                 parent, false));
     }
 
     @Override
-    public void onBindViewHolder(@NonNull AmoreAdaptador.ViewHolder holder, int position) {
-        final Amore itemAndroid = lista.get(position);
+    public void onBindViewHolder(@NonNull CategoriaAdaptador.ViewHolder holder, int position) {
+        final CategoriaEntity itemAndroid = lista.get(position);
         holder.binding.ivdesayunos.setImageResource(itemAndroid.getImagen());
         holder.binding.contenedor.setOnClickListener(new View.OnClickListener() {
             @Override

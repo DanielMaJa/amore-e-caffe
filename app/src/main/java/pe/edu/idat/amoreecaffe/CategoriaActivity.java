@@ -16,7 +16,7 @@ public class CategoriaActivity extends AppCompatActivity {
         binding = ActivityCategoriaBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         if(getIntent().hasExtra("android")){
-            Amore objAndroid = getIntent().getParcelableExtra("android");
+            CategoriaEntity objAndroid = getIntent().getParcelableExtra("android");
             binding.ivcategoriadeasayuno.setImageResource(objAndroid.getImagen());
         }
     }
