@@ -3,17 +3,17 @@
 
     <item
         android:id="@+id/menuFragment"
-        android:icon="@drawable/ic_home_black_24dp"
-        android:title="Menú" />
+        android:icon="@drawable/ic_baseline_food_bank_24"
+        android:title="@string/valmenufragment" />
 
     <item
         android:id="@+id/carritoFragment"
-        android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="Carrito" />
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
+        android:title="@string/valcarritofragment" />
 
     <item
         android:id="@+id/cuentaFragment"
-        android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="Mi Cuenta" />
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="@string/valcuentafragment" />
 
 </menu>
